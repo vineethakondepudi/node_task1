@@ -1,4 +1,10 @@
+Class_1 Passed students:
 prassanna
 supriya
 satya
 prameela
+
+Class_2 Passed students:
+koti
+mahi
+nani

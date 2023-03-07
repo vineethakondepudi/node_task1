@@ -18,7 +18,7 @@ routes.post('/post',(req,res,next)=>{
   return res.send(result.error.message)
   }
       
-  let userdata = task.getMethod(req,res,function(getMethod){
+ task.getMethod(req,res,function(getMethod){
   
    })
      

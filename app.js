@@ -8,7 +8,8 @@ var db1 = require('./database/database1');
 var db2 = require('./database/atask1');
 var m1 = require('./models/atask1');
 var token = require('./jwtToken');
-var annatask = require('./models/annatask')
+var annatask = require('./models/annatask');
+var sirTask = require('./models/sirTask')
 
 
 var indexRouter = require('./routes/index');
@@ -17,6 +18,7 @@ var staticdataRouter = require('./routes/staticdata');
 var joiRouter = require('./routes/joivalid');
 var atask1 = require('./routes/atask1');
 var annaRouter = require('./routes/annatask');
+var joiValidationTask1Router = require('./routes/joiValidationTask')
 
 
 var app = express();
@@ -37,6 +39,7 @@ app.use('/staticdata',staticdataRouter);
 app.use('/joi',joiRouter);
 app.use('/task',atask1);
 app.use('/atask',annaRouter);
+app.use('/joi',joiValidationTask1Router)
 
 
 
