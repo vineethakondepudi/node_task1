@@ -9,7 +9,9 @@ var db2 = require('./database/atask1');
 var m1 = require('./models/atask1');
 var token = require('./jwtToken');
 var annatask = require('./models/annatask');
-var sirTask = require('./models/sirTask')
+var chinna = require('./models/chinna_task');
+var srTask2 = require('./models/sirTask2');
+
 
 
 var indexRouter = require('./routes/index');
@@ -18,7 +20,9 @@ var staticdataRouter = require('./routes/staticdata');
 var joiRouter = require('./routes/joivalid');
 var atask1 = require('./routes/atask1');
 var annaRouter = require('./routes/annatask');
-var joiValidationTask1Router = require('./routes/joiValidationTask')
+var joiValidationTask1Router = require('./routes/joiValidationTask');
+var chinnaRouter = require('./routes/chinna_task');
+var sirTask2 = require('./routes/sirTask2')
 
 
 var app = express();
@@ -39,7 +43,9 @@ app.use('/staticdata',staticdataRouter);
 app.use('/joi',joiRouter);
 app.use('/task',atask1);
 app.use('/atask',annaRouter);
-app.use('/joi',joiValidationTask1Router)
+app.use('/joi',joiValidationTask1Router);
+app.use('/chinna',chinnaRouter);
+app.use('/sir',sirTask2)
 
 
 

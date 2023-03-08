@@ -19,7 +19,7 @@ function postId(req,res){
     console.log(err);
   }
   else{
-    res.send(data)
+    res.send("Congratulations................")
   }
  })
 }
