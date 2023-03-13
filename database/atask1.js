@@ -6,15 +6,15 @@ const connection=mysql.createConnection({
     password:"miracle@10",
     database:"vineetha"
 })
-connection.connect((err)=>
-{
-  if(!err)
-  {
-    console.log("database connected successfully")
-  }
-  else{
-    console.log(err)
-  }
-}) 
+// connection.connect((err)=>
+// {
+//   if(!err)
+//   {
+//     console.log("database connected successfully")
+//   }
+//   else{
+//     console.log(err)
+//   }
+// }) 
  
 module.exports=connection;

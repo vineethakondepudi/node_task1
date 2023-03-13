@@ -1,4 +1,4 @@
-var connection1 = require('../database/database1')
+var connection1 = require('../database/database1');
 var fs = require('fs');
 var PDFDocument = require('pdfkit');
 const doc = new PDFDocument();

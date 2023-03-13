@@ -11,7 +11,7 @@ user:'vineethakondepudi22@gmail.com',
 pass: 'bpgnzdnzvpmvgkuo'
 }
 });
-
+// transporter.a('company-logo', fs.createReadStream("k3.jpg"))
 router.get('/vinnu',(req,res)=>{
     let mailOptions = {
         from: 'vineethakondepudi122@gmail.com', 
@@ -19,7 +19,7 @@ router.get('/vinnu',(req,res)=>{
         subject: ' vineetha kondepudi',
         text: '',
         html: '<p>Hai this is vineetha</p>',
-        attachments: [{path:"k3.jpg"},{ path:"c:\\users\\vkondepudi\\node_task1\\sirTask2.json",content: 'hello world!' }]
+        attachments: [{path:"k5.jpg"},{ path:"c:\\users\\vkondepudi\\node_task1\\sirTask2.json",content: 'hello world!' }]
         }
         transporter.sendMail(mailOptions, (err, data) => {
         if (err) {

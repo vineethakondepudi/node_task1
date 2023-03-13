@@ -15,7 +15,7 @@ function getId(req,res){
 
 
 function postId(req,res){
- 
+ console.log(req.body);
  connection1.query("insert into emp2(Firstname,Lastname,Email,Mobile_num) values('"+req.body.Firstname+"','"+req.body.Lastname+"','"+req.body.Email+"','"+req.body.Mobile_num+"')",(err,data)=>{
   if(err){
     console.log(err);

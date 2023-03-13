@@ -3,14 +3,17 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var db = require('./database/database');
+// var db = require('./database/database');
 var db1 = require('./database/database1');
-var db2 = require('./database/atask1');
-var m1 = require('./models/atask1');
-var token = require('./jwtToken');
-var annatask = require('./models/annatask');
-var chinna = require('./models/chinna_task');
-var srTask2 = require('./models/sirTask2');
+// var db2 = require('./database/atask1');
+// var m1 = require('./models/atask1');
+// var token = require('./jwtToken');
+// var annatask = require('./models/annatask');
+// var chinna = require('./models/chinna_task');
+// var srTask2 = require('./models/sirTask2');
+// var sirTask3 = require('./models/sirTask3');
+// var sirTask4 = require('./sirTask4');
+
 
 
 
@@ -22,7 +25,12 @@ var atask1 = require('./routes/atask1');
 var annaRouter = require('./routes/annatask');
 var joiValidationTask1Router = require('./routes/joiValidationTask');
 var chinnaRouter = require('./routes/chinna_task');
-var sirTask2 = require('./routes/sirTask2')
+var sirTask2 = require('./routes/sirTask2');
+var sirTask3 = require('./routes/sirTask3');
+var srivani1 = require('./routes/srivani')
+
+
+
 
 
 var app = express();
@@ -45,7 +53,9 @@ app.use('/task',atask1);
 app.use('/atask',annaRouter);
 app.use('/joi',joiValidationTask1Router);
 app.use('/chinna',chinnaRouter);
-app.use('/sir',sirTask2)
+app.use('/sir',sirTask2);
+app.use('/sir',sirTask3);
+app.use('/data',srivani1)
 
 
 

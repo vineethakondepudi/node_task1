@@ -5,15 +5,15 @@ const connection1=mysql.createConnection({
     password:"miracle@10",
     database:"vineetha"
 })
-// connection1.connect((err)=>
-// {
-//   if(!err)
-//   {
-//     console.log("database1 connected")
-//   }
-//   else{
-//     console.log(err)
-//   }
-// }) 
+connection1.connect((err)=>
+{
+  if(!err)
+  {
+    console.log("database1 connected")
+  }
+  else{
+    console.log(err)
+  }
+}) 
  
 module.exports=connection1;
