@@ -29,6 +29,6 @@ app.post('/api',(req,res)=>{
 //      })
        
 //   });
-app.listen(2000,'172.17.12.39',()=>console.log('listening on http://172.17.12.39:2000/api'))
+// app.listen(2000,'172.17.12.39',()=>console.log('listening on http://172.17.12.39:2000/api'))
 
   module.exports = routes

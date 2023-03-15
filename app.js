@@ -13,6 +13,7 @@ var db1 = require('./database/database1');
 // var srTask2 = require('./models/sirTask2');
 // var sirTask3 = require('./models/sirTask3');
 // var sirTask4 = require('./sirTask4');
+var cache = require('./cache')
 
 
 
@@ -27,7 +28,8 @@ var joiValidationTask1Router = require('./routes/joiValidationTask');
 var chinnaRouter = require('./routes/chinna_task');
 var sirTask2 = require('./routes/sirTask2');
 var sirTask3 = require('./routes/sirTask3');
-var srivani1 = require('./routes/srivani')
+var srivani1 = require('./routes/srivani');
+var cache = require('./routes/routeCache')
 
 
 
@@ -55,7 +57,8 @@ app.use('/joi',joiValidationTask1Router);
 app.use('/chinna',chinnaRouter);
 app.use('/sir',sirTask2);
 app.use('/sir',sirTask3);
-app.use('/data',srivani1)
+app.use('/data',srivani1);
+app.use('/cache',cache)
 
 
 
