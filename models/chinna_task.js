@@ -4,7 +4,7 @@ var PDFDocument = require('pdfkit');
 const doc = new PDFDocument();
 doc.pipe(fs.createWriteStream('chinna.pdf'));
 function getId(req,res){
-   connection1.query('SELECT * FROM chinna_task LIMIT 10 OFFSET 0;',(err,data)=>{
+   connection1.query('SELECT * FROM chinna_task LIMIT 4 OFFSET 1;',(err,data)=>{
    if(err){
     console.log(err);
    }
